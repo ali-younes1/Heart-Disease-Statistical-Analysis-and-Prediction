@@ -1,6 +1,6 @@
 # 🩺 Heart Disease Statistical Analysis and Prediction
 
-Statistical analysis and predictive modeling on a cardiovascular dataset (HeartDisease.csv) using **R**.  
+Statistical analysis and predictive modeling on a cardiovascular dataset using **R**.  
 This project covers data cleaning, missing-value imputation, exploratory analysis, hypothesis testing, and multiple models to study and predict **heart disease**.
 
 ## Project Context
