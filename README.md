@@ -25,8 +25,7 @@ Main variables include:
 - STSlope
 - HeartDisease
 
-> Note: The dataset is not included in this repository by default.  
-> Place it in `data/HeartDisease.csv` (or update the path in the script).
+
 
 ## What’s Inside
 
