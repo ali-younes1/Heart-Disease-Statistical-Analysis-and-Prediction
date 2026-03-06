@@ -1,4 +1,4 @@
-# 🩺 Heart Disease Statistical Analysis 
+# 🩺 Heart Disease Statistical Analysis and Prediction
 
 Statistical analysis and predictive modeling on a cardiovascular dataset (HeartDisease.csv) using **R**.  
 This project covers data cleaning, missing-value imputation, exploratory analysis, hypothesis testing, and multiple models to study and predict **heart disease**.
@@ -9,21 +9,21 @@ The goal here is to analyze a medical dataset with multiple clinical features an
 
 ## Dataset
 - File: `HeartDisease.csv`
-- Target (qualitative): **MaladieCardiaque** (1 = heart disease, 0 = normal)
+- Target (qualitative): **HeartDisease** (1 = heart disease, 0 = normal)
 - Target (quantitative): **Cholesterol**
 
 Main variables include:
-- Age, Sexe
-- TypeDouleurThoracique (TA / ATA / NAP / ASY)
-- TensionArterielleRepos
+- Age, Sex
+- ChestPainType (TA / ATA / NAP / ASY)
+- RestingBloodPressure
 - Cholesterol
-- GlycemieJeune
-- ECGRepos
-- FrequenceCardiaqueMax
-- AngineExercice
-- DepressionAncienne
-- PenteSTExercice
-- MaladieCardiaque
+- FastingBloodSugar
+- RestingECG
+- MaxHeartRate
+- ExerciseAngina
+- Oldpeak
+- STSlope
+- HeartDisease
 
 > Note: The dataset is not included in this repository by default.  
 > Place it in `data/HeartDisease.csv` (or update the path in the script).
@@ -48,8 +48,8 @@ Main variables include:
 
 **Bivariate analysis**
 - Relationships between variables using plots and statistical tests
-- Focus on the association between **MaladieCardiaque** and explanatory variables
-- Example: Chi-square test for associations between categorical variables (e.g., MaladieCardiaque vs Sexe)
+- Focus on the association between **HeartDisease** and explanatory variables
+- Example: Chi-square test for associations between categorical variables (e.g., HeartDisease vs Sex)
 
 ### 3) Regression (Cholesterol as a quantitative target)
 - Simple and multiple linear regression to study links between **Cholesterol** and other predictors
@@ -59,11 +59,11 @@ Main variables include:
 - Comparison of groups across selected variables
 
 ### 5) Logistic Regression (Predicting Heart Disease)
-- Builds a logistic regression model for **MaladieCardiaque**
+- Builds a logistic regression model for **HeartDisease**
 - Identifies significant predictors (reported in the presentation), including:
-  - Age, Sexe, TypeDouleurThoracique
-  - FrequenceCardiaqueMax, AngineExercice, PenteSTExercice
-  - DepressionAncienne
+  - Age, Sex, ChestPainType
+  - MaxHeartRate, ExerciseAngina, STSlope
+  - Oldpeak
 - Interprets coefficients in terms of log-odds
 
 ### 6) Linear Discriminant Analysis (LDA / ADL)
