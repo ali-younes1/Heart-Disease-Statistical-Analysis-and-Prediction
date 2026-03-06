@@ -8,7 +8,6 @@ Cardiovascular diseases are a leading cause of mortality worldwide.
 The goal here is to analyze a medical dataset with multiple clinical features and build models that help explain and predict the presence of heart disease.
 
 ## Dataset
-- File: `HeartDisease.csv`
 - Target (qualitative): **HeartDisease** (1 = heart disease, 0 = normal)
 - Target (quantitative): **Cholesterol**
 
